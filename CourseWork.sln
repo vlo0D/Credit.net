@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditBL", "CreditBL\CreditBL.csproj", "{EA0F5675-8A94-4442-B8F1-F3E3E80419B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditUI", "CreditUI\CreditUI.csproj", "{01398D9B-E0F6-4E22-827A-D69B5CEC67DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA0F5675-8A94-4442-B8F1-F3E3E80419B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA0F5675-8A94-4442-B8F1-F3E3E80419B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA0F5675-8A94-4442-B8F1-F3E3E80419B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA0F5675-8A94-4442-B8F1-F3E3E80419B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01398D9B-E0F6-4E22-827A-D69B5CEC67DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01398D9B-E0F6-4E22-827A-D69B5CEC67DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01398D9B-E0F6-4E22-827A-D69B5CEC67DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01398D9B-E0F6-4E22-827A-D69B5CEC67DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C97B8EC-CEF1-4206-B2EE-85FFC354F6B1}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01398D9B-E0F6-4E22-827A-D69B5CEC67DF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CreditUI</RootNamespace>
+    <AssemblyName>CreditUI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CreateClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateClient.Designer.cs">
+      <DependentUpon>CreateClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateCredit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateCredit.Designer.cs">
+      <DependentUpon>CreateCredit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateEmployee.Designer.cs">
+      <DependentUpon>CreateEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateType.Designer.cs">
+      <DependentUpon>CreateType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreditConnectionDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreditConnectionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CreditConnectionDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreditConnectionDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CreditConnectionDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreditConnectionDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CreditConnectionDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreditConnectionDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CreditConnectionDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreditConnectionDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CreditConnectionDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreditConnectionDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FClients.Designer.cs">
+      <DependentUpon>FClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEmployee.Designer.cs">
+      <DependentUpon>FEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FType_of_credits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FType_of_credits.Designer.cs">
+      <DependentUpon>FType_of_credits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Show.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show.Designer.cs">
+      <DependentUpon>Show.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CreateClient.resx">
+      <DependentUpon>CreateClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateCredit.resx">
+      <DependentUpon>CreateCredit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateEmployee.resx">
+      <DependentUpon>CreateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateType.resx">
+      <DependentUpon>CreateType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FClients.resx">
+      <DependentUpon>FClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEmployee.resx">
+      <DependentUpon>FEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FType_of_credits.resx">
+      <DependentUpon>FType_of_credits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Show.resx">
+      <DependentUpon>Show.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="CreditConnectionDataSet.xsc">
+      <DependentUpon>CreditConnectionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CreditConnectionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CreditConnectionDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CreditConnectionDataSet.xss">
+      <DependentUpon>CreditConnectionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CreditConnectionDataSet1.xsc">
+      <DependentUpon>CreditConnectionDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CreditConnectionDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CreditConnectionDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CreditConnectionDataSet1.xss">
+      <DependentUpon>CreditConnectionDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CreditConnectionDataSet2.xsc">
+      <DependentUpon>CreditConnectionDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CreditConnectionDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CreditConnectionDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CreditConnectionDataSet2.xss">
+      <DependentUpon>CreditConnectionDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CreditConnectionDataSet3.xsc">
+      <DependentUpon>CreditConnectionDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="CreditConnectionDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CreditConnectionDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CreditConnectionDataSet3.xss">
+      <DependentUpon>CreditConnectionDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="CreditConnectionDataSet4.xsc">
+      <DependentUpon>CreditConnectionDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="CreditConnectionDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CreditConnectionDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CreditConnectionDataSet4.xss">
+      <DependentUpon>CreditConnectionDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="CreditConnectionDataSet6.xsc">
+      <DependentUpon>CreditConnectionDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="CreditConnectionDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CreditConnectionDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CreditConnectionDataSet6.xss">
+      <DependentUpon>CreditConnectionDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\CreditBL.Model.Client.datasource" />
+    <None Include="Properties\DataSources\CreditBL.Model.Credit.datasource" />
+    <None Include="Properties\DataSources\CreditBL.Model.CreditContext.datasource" />
+    <None Include="Properties\DataSources\CreditBL.Model.Employee.datasource" />
+    <None Include="Properties\DataSources\CreditBL.Model.Status.datasource" />
+    <None Include="Properties\DataSources\CreditBL.Model.Type_of_credit.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CreditBL\CreditBL.csproj">
+      <Project>{ea0f5675-8a94-4442-b8f1-f3e3e80419b2}</Project>
+      <Name>CreditBL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
